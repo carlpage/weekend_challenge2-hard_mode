@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-right: 55rem;
+  margin-left: 55rem;
+  padding: 2rem;
+}
+
+#numBox {
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+}
