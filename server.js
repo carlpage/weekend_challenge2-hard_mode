@@ -30,7 +30,7 @@ app.post('/resultNumber', function(req, res) {
 //}catch(error){
   //console.log(JSON.stringify(error,'','    '));
 //}
-});
+}); //end resultNumber 
 
 function numberEvaluation(obj) {
   return eval(obj.input);

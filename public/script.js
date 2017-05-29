@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('body').on('keypress', function(event) {
-    switch (event.keyCode) {
+    switch (event.keyCode) { //keycodes
       case 43:
         $('#numBox').append('+');
         break;
@@ -59,7 +59,7 @@ $(document).ready(function() {
         clearNums();
         break;
     }
-  });
+  }); //end keycodes
   $('#0').on('click', function() {
     $('#numBox').append('0');
   });
@@ -123,13 +123,12 @@ function submitNums() {
     },
     success: function(response) {
       console.log('posted: ', response);
-      $('#result').text(response);
+      $('#numBox').text(response);
     }
   });
 }
 
 function clearNums() {
   $('#numBox').empty();
-  $('#result').empty();
   console.log('cleared inputs');
 }
