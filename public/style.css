@@ -4,6 +4,7 @@ body {
 }
 
 .calculator {
+  background-color: #A1A6B4;
   border: solid 1px;
   border-radius: 10px;
   margin-right: 55rem;

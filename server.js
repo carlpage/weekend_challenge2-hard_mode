@@ -20,17 +20,17 @@ app.get('/', function(req, res) {
 }); //end base url
 
 app.post('/resultNumber', function(req, res) {
-  //try{
+// try {
   console.log('resultNumber accessed: ', req.body);
   var number = req.body;
   console.log(number);
   var returnEval = numberEvaluation(number);
   console.log(returnEval);
   res.end(returnEval.toString());
-//}catch(error){
+// } catch(error) {
   //console.log(JSON.stringify(error,'','    '));
-//}
-}); //end resultNumber 
+// }
+}); //end resultNumber
 
 function numberEvaluation(obj) {
   return eval(obj.input);
