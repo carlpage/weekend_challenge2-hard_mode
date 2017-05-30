@@ -1,8 +1,20 @@
 $(document).ready(function() {
   $('body').on('keypress', function(event) {
     switch (event.keyCode) { //keycodes
+      case 42:
+        $('#numBox').append('*');
+        break;
       case 43:
         $('#numBox').append('+');
+        break;
+      case 45:
+        $('#numBox').append('-');
+        break;
+      case 46:
+        $('#numBox').append('.');
+        break;
+      case 47:
+        $('#numBox').append('/');
         break;
       case 48:
         $('#numBox').append('0');
@@ -33,24 +45,6 @@ $(document).ready(function() {
         break;
       case 57:
         $('#numBox').append('9');
-        break;
-      case 61:
-        submitNums();
-        break;
-      case 42:
-        $('#numBox').append('*');
-        break;
-      case 43:
-        $('#numBox').append('+');
-        break;
-      case 45:
-        $('#numBox').append('-');
-        break;
-      case 46:
-        $('#numBox').append('.');
-        break;
-      case 47:
-        $('#numBox').append('/');
         break;
       case 61:
         submitNums();
